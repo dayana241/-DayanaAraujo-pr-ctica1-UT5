@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llamar Ejercicios</title>
+</head>
+<body>
+
+    <h1>Prueba de Ejercicios</h1>
+
+    <button onclick="ejecutarEjercicio1()">Ejecutar Ejercicio1</button>
+    <button onclick="ejecutarEjercicio2()">Ejecutar Ejercicio2</button>
+    <button onclick="ejecutarEjercicio3()">Ejecutar Ejercicio3</button>
+    <button onclick="ejecutarEjercicio4()">Ejecutar Ejercicio4</button>
+
+    <script src="Ejercicio1.js"></script> 
+    <script src="Ejercicio2.js"></script>
+    <script src="Ejercicio3.js"></script>
+    <script src="Ejercicio4.js"></script>
+
+    <script>
+        function ejecutarEjercicio1() {
+            Ejercicio1();
+            Ejercicio1("hola mundo", true, [1, 2, 3, 4], () => { alert("Se acabó el juego") });
+            Ejercicio1("Sí", true, [10, 20, 30, 40], () => { alert("Se acabó el juego") });
+            Ejercicio1("Sí", false, [10, 20, 30, 40], () => { alert("Se acabó el juego") });
+        }
+
+        function ejecutarEjercicio2() {
+            verAsignaturas(["Sara", "DAMA", "Programación", "ED"], ["Martín", "DAMB", "Programación", "LM", "ED", "BBDD", "FOL", "SI"]);
+            verAsignaturas(["Álvaro","Semi","BBDD"]);
+            verAsignaturas();
+        }
+
+        function ejecutarEjercicio3() {
+            compararNombres(
+                ["Elisabet Ricart Monreal", "María Del Carmen Sedano-Rocamora", "Roldán Alvarado"],
+                ["Elisabet Ricart Monreal", "María Del Carmen Sedano-Rocamora", "Roldán Alvarado", "Isaac Talavera Luna"]
+            );
+
+            compararNombres(
+                ["Lina Armida Machado Iglesias", "Apolonia Santiago Buendía"],
+                ["Elisabet Ricart Monreal", "María Del Carmen Sedano-Rocamora", "Roldán Alvarado"]
+            );
+
+            compararNombres(
+                ["Elisabet Ricart Monreal", "Poncio Cobo Herrera", "Isaac Talavera Luna"],
+                ["Elisabet Ricart Monreal", "María Del Carmen Sedano-Rocamora", "Roldán Alvarado", "Isaac Talavera Luna"]
+            );
+        }
+
+        function ejecutarEjercicio4() {
+            agregarAsignaturas();
+        }
+    </script>
+
+</body>
+</html>
+
